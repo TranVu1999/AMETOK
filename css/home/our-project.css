@@ -1,10 +1,8 @@
-.recent-projects__container>.d-flex{
-    gap: .125rem;
-}
+
 
 .project__item{
     position: relative;
-    flex: 1;
+    flex-basis: 25%;
     border-radius: .25rem;
     overflow: hidden;
 }
@@ -39,7 +37,7 @@
 }
 
 .project__item:hover .overlay{
-    transform: translateX(0);
+    transform: translateX(0)!important;
 }
 
 .project__item .overlay .title{
@@ -59,3 +57,84 @@
 .project__item .overlay p{
     font-size: .9375rem;
 }
+
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+
+    .recent-projects__container>.d-flex{
+        flex-wrap: wrap;
+        gap: .0625rem;
+    }
+
+    .project__item{
+        flex-basis: 100%;
+    }
+
+    .project__item .thumbnail{
+        height: 28rem;
+    }
+
+    .project__item:nth-child(1) .overlay,
+    .project__item:nth-child(3) .overlay{
+        transform: translateX(-100%);
+        left: initial;
+        right: 32px;
+    }
+
+    .project__item .overlay{
+        padding: 1.5rem;
+    }
+
+    .project__item .overlay p{
+        height: 13.5rem;
+        line-height: 1.5rem;
+        word-break: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -ms-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-line-clamp: 9;
+        -moz-line-clamp: 9;
+        -ms-line-clamp: 9;
+        line-clamp: 9;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .project__item{
+        flex-basis: 49%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 992px){
+    
+}
+
+@media screen and (min-width: 1023px){
+    .recent-projects__container>.d-flex{
+        flex-wrap: nowrap;
+    }
+    .project__item{
+        flex-basis: 25%;
+    }
+
+    .project__item:nth-child(1) .overlay,
+    .project__item:nth-child(3) .overlay{
+        right: inherit;
+        left: 32px;
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
