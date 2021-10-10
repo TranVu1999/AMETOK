@@ -1,0 +1,53 @@
+.benefit__thumbnail{
+    position: relative;
+    margin-right: 5.875rem;
+}
+
+.benefit__thumbnail .section-padding{
+    position: relative;
+    z-index: 1;
+}
+
+.benefit__thumbnail::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+
+    width: 200%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    background-image: url('./../assets/images/backgrounds/benefit-lines.png');
+    background-size: cover;
+    z-index: 0;
+}
+
+.benefit__thumbnail img{
+    height: 566px;
+    width: 570px;
+    border-radius: .25rem;
+}
+
+.benefit__buttons{
+    margin-bottom: 1.5rem;
+}
+
+.benefit__buttons button{
+    margin-right: 1rem;
+    padding: 1rem 1.5rem;
+    min-width: 6rem;
+
+    text-transform: initial;
+    background-color: #f6f6f6;
+}
+
+.benefit__buttons i{
+    margin-right: .5rem;
+    color: var(--secondary-color);
+}
+
+.benefit__description{
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}

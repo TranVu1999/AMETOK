@@ -1,0 +1,169 @@
+.section-padding{
+    padding-top: 7.375rem;
+    padding-bottom: 7.375rem;
+}
+
+.container{
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+/* ================= Section Title =================*/
+.section-title{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.section-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 3.125rem;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.section-title.text-center:after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title span{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .125rem;
+}
+
+.section-title.light span{
+    color: rgba(255, 255, 255, .8);
+}
+
+.section-title h1{
+    font-size: 3.125rem;
+    line-height: 3.5rem;
+    color: var(--primary-color);
+}
+
+.section-title.light h1{
+    color: var(--light-color);
+}
+
+/* ================= Button =================*/
+.btn{
+    min-width: 14.75rem;
+    padding: 1.6875rem 0;
+
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+
+    border-radius: 4px;
+}
+
+
+.btn.btn-primary{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+
+/* ================= Text =================*/
+.text-center{
+    text-align: center;
+}
+
+
+/* ================= Slider =================*/
+.slider{
+    position: relative;
+}
+
+.slider .slider__container{
+    margin-bottom: 3rem;
+}
+
+.slider .slider__dots button{
+    display: inline-block;
+    height: .75rem;
+    width: .75rem;
+    margin-right: .5rem;
+    background-color: var(--primary-color);
+
+    border-radius: 50%;
+    opacity: .3;
+}
+
+.slider .slider__dots button.active{
+    opacity: 1;
+}
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+    .container{
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .container{
+        width: 420px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 568px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        width: 992px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

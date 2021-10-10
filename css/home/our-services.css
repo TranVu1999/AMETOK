@@ -1,0 +1,62 @@
+.our-services{
+    position: relative;
+    background-image: url('./../assets/images/backgrounds/our-services.png');
+    background-position: center;
+}
+
+.our-services .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(36, 36, 36, .9);
+    z-index: 0;
+}
+
+.our-services .container{
+    z-index: 1;
+}
+
+.services{
+    margin-top: 8rem;
+    gap: 1.875rem;
+}
+
+.service__item{
+    position: relative;
+}
+
+.service__item .thumbnail{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: .75rem;
+    width: 12rem;
+    height: 12rem;
+
+    background-color: var(--light-color);
+    border-radius: 50%;
+}
+
+.service__item .thumbnail div{
+    height: 10.5rem;
+    width: 10.5rem;
+    border-radius: 50%;
+}
+
+.service__item .text{
+    padding: 8rem 3.375rem 4rem;
+    text-align: center;
+    background-color: var(--light-color);
+    border-radius: .25rem;
+}
+
+.service__item .text h5{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}

@@ -1,0 +1,67 @@
+.sidebar{
+    font-size: .875rem;
+}
+
+.sidebar .form-search{
+    padding: 1rem 1rem;
+    background-color: #242424;
+}
+
+.sidebar .form-search button{
+    color: var(--light-color);
+}
+
+.sidebar .form-search input{
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+.sidebar .form-search input::placeholder{
+    color: var(--light-color);
+    font-weight: 600;
+    opacity: .7;
+}
+
+.sidebar .widget__item{
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+}
+
+.sidebar .widget__item .title{
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.sidebar .widget__item .category__item{
+    padding: 0.4375rem 0;
+}
+
+.sidebar .widget__item .category__item.active{
+    color: var(--secondary-color);
+}
+
+.sidebar .widget__item .category__item i{
+    margin-right: 1rem;
+    font-size: .875rem;
+}
+
+.sidebar .widget__item .tag{
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+
+    background-color: var(--light-color);
+}
+
+.sidebar .widget__item .tag.active{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.sidebar .widget__item .tag a{
+    display: block;
+    padding: .5rem .75rem;
+}
