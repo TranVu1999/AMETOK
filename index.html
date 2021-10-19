@@ -107,7 +107,31 @@
 
         <!-- Start Hero -->
         <section class="hero">
-            <div class="hero">
+            <div class="hero__container">
+                <div class="slider__item">
+                    <div class="container">
+                        <div class="slider__text">
+                            <p>Best Flooring Business</p>
+                            <h1>Flooring that Feels Like Home</h1>
+                        </div>
+                        <div class="slider__buttons">
+                            <button class="btn btn-primary">Discover More</button>
+                            <button class="btn">View Projects</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="container">
+                        <div class="slider__text">
+                            <p>Best Flooring Business</p>
+                            <h1>Flooring that Feels Like Home</h1>
+                        </div>
+                        <div class="slider__buttons">
+                            <button class="btn btn-primary">Discover More</button>
+                            <button class="btn">View Projects</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="slider__item">
                     <div class="container">
                         <div class="slider__text">
@@ -135,7 +159,7 @@
         <!-- Start Welcome -->
         <section class="section-padding welcome">
             <div class="container">
-                <div class="d-flex align-items-center">
+                <div class="welcome_container">
                     <div class="welcome_circles">
                         <div class="thumbnail-circle"></div>
                         <div class="background-circle"></div>
@@ -155,7 +179,7 @@
                         </div> 
 
                         <div class="welcome__description">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center flex-wrap">
                                 <div class="thumbnail">
                                     <img src="./assets/images/backgrounds/welcome-video.png" alt="video">
                                     <div class="control">
@@ -185,13 +209,14 @@
         <!-- Start Our Services -->
         <section class="section-padding our-services">
             <div class="overlay"></div>
+
             <div class="container">
                 <div class="section-title light text-center">
                     <span>Our Services</span>
                     <h1>What We're Offering</h1>
                 </div>
 
-                <div class="d-flex services">
+                <div class="services">
                     <div class="service__item">
                         <div class="thumbnail">
                             <div style="background-image: url(./assets/images/our-services/1.png);"></div>                            
@@ -227,10 +252,11 @@
         <!-- Start Benefits -->
         <section class="benefits">
             <div class="container">
-                <div class="d-flex align-items-center benefits__container">
+                <div class="benefits__container">
                     <div class="benefit__thumbnail">
                         <div class="section-padding">
-                            <img src="./assets/images/backgrounds/benefit.png" alt="benefit">
+                            <img src="./assets/images/backgrounds/benefit.png" alt="benefit" class="img-desktop">
+                            <img src="./assets/images/backgrounds/benefit-mobile.jpg" alt="" class="img-mobile">
                         </div>
                     </div>
                     <div class="benefit__text">
@@ -267,88 +293,75 @@
                 </div>
 
                 <div class="testimonia__cotnainer">
-                    <div class="slider">
-                        <div class="slider__container">
-                            <div class="slider__item">
-                                <div class="d-flex">
-                                    <div class="testimonial__item">
-                                        <div class="testimonial__content">
-                                            I was very impresed by the company service ipsum is simply free text used by copy. Neque simply free text porro est dolorem ipsum quia.
-                                        </div>
-                                        <div class="testimonial__author">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <b>Mike Hardson</b>
-                                                    <span>Contractor</span>
-                                                </div>
-                                                <div class="rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial__avatar">
-                                            <img src="./assets/images/testimonials/1.png" alt="author">
-                                        </div>
-                                    </div>
-
-                                    <div class="testimonial__item">
-                                        <div class="testimonial__content">
-                                            I was very impresed by the company service ipsum is simply free text used by copy. Neque simply free text porro est dolorem ipsum quia.
-                                        </div>
-                                        <div class="testimonial__author">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <b>Mike Hardson</b>
-                                                    <span>Contractor</span>
-                                                </div>
-                                                <div class="rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial__avatar">
-                                            <img src="./assets/images/testimonials/1.png" alt="author">
-                                        </div>
-                                    </div>
-                
-                                    <div class="testimonial__item">
-                                        <div class="testimonial__content">
-                                            I was very impresed by the company service ipsum is simply free text used by copy. Neque simply free text porro est dolorem ipsum quia.
-                                        </div>
-                                        <div class="testimonial__author">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <b>Mike Hardson</b>
-                                                    <span>Contractor</span>
-                                                </div>
-                                                <div class="rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial__avatar">
-                                            <img src="./assets/images/testimonials/1.png" alt="author">
-                                        </div>
-                                    </div>
+                    <div class="testimonial__item">
+                        <div class="testimonial__content">
+                            I was very impresed by the company service ipsum is simply free text used by copy. Neque simply free text porro est dolorem ipsum quia.
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <b>Mike Hardson</b>
+                                    <span>Contractor</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center slider__dots">
-                            <button class="active"></button>
-                            <button></button>
-                            <button></button>
+                        <div class="testimonial__avatar">
+                            <img src="./assets/images/testimonials/1.png" alt="author">
+                        </div>
+                    </div>
+
+                    <div class="testimonial__item">
+                        <div class="testimonial__content">
+                            I was very impresed by the company service ipsum is simply free text used by copy. Neque simply free text porro est dolorem ipsum quia.
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <b>Mike Hardson</b>
+                                    <span>Contractor</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__avatar">
+                            <img src="./assets/images/testimonials/1.png" alt="author">
+                        </div>
+                    </div>
+
+                    <div class="testimonial__item">
+                        <div class="testimonial__content">
+                            I was very impresed by the company service ipsum is simply free text used by copy. Neque simply free text porro est dolorem ipsum quia.
+                        </div>
+                        <div class="testimonial__author">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <b>Mike Hardson</b>
+                                    <span>Contractor</span>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__avatar">
+                            <img src="./assets/images/testimonials/1.png" alt="author">
                         </div>
                     </div>
                     
@@ -373,7 +386,7 @@
         <!-- Start FAQs -->
         <section class="section-padding faqs">
             <div class="container">
-                <div class="d-flex">
+                <div class="faqs__content">
                     <div class="faq__text">
                         <div class="section-title">
                             <span>Our Faqs</span>
@@ -385,6 +398,7 @@
                                 <div class="label">
                                     <span>Laminate Flooring Buying Guide</span>
                                     <i class="fas fa-minus"></i>
+                                    <i class="fas fa-plus"></i>
                                 </div>
                                 <div class="detail">
                                     <p>
@@ -395,6 +409,7 @@
                             <div class="question__item">
                                 <div class="label">
                                     <span>How to: Fit Flo  or & Wall Tiles</span>
+                                    <i class="fas fa-minus"></i>
                                     <i class="fas fa-plus"></i>
                                 </div>
                                 <div class="detail">
@@ -407,6 +422,7 @@
                             <div class="question__item">
                                 <div class="label">
                                     <span>Laminate Flooring Buying Guide</span>
+                                    <i class="fas fa-minus"></i>
                                     <i class="fas fa-plus"></i>
                                 </div>
                                 <div class="detail">
@@ -678,6 +694,8 @@
         <!-- End Footer -->
 
         <script src="./js/header.js"></script>
+        <script src="./js/hero.js"></script>
+        <script src="./js/toggle-question.js"></script>
         
     </div>
 </body>

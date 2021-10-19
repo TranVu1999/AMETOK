@@ -25,7 +25,7 @@
 
    
 </head>
-<body>
+<body onscroll="handleScrollPage()">
     <!-- 0.5h -->
     <div class="main-wrapper shop-detail-page">
         <!-- Start Header -->
@@ -104,7 +104,7 @@
             <div class="container">
                 <div class="new-detail__container">
                     <div class="new-detail__content">
-                        <div class="new__thubmnail">
+                        <div class="new__thumbnail">
                             <img src="./assets/images/news/4-1.png" alt="post">
 
                             <div class="new__date">
@@ -143,7 +143,7 @@
                             </div>
                         </div>
 
-                        <div class="d-flex new__about-author">
+                        <div class="new__about-author">
                             <div class="thumbnail">
                                 <img src="./assets/images/news/author.png" alt="author">
                             </div>
@@ -164,7 +164,7 @@
                                         <img src="./assets/images/comments/1.png" alt="avatar">
                                     </div>
                                     <div class="comment__text">
-                                        <div class="d-flex align-items-center justify-content-between">
+                                        <div class="comment__text--top">
                                             <div class="comment__author">
                                                 Kevin Martin
                                             </div>
@@ -184,7 +184,7 @@
                                         <img src="./assets/images/comments/2.png" alt="avatar">
                                     </div>
                                     <div class="comment__text">
-                                        <div class="d-flex align-items-center justify-content-between">
+                                        <div class="comment__text--top">
                                             <div class="comment__author">
                                                 Christine Eve
                                             </div>
@@ -203,7 +203,6 @@
                         </div>
 
                         <div class="add-review">
-                            
                 
                             <div class="title">
                                 <h2>Add a Review</h2>
@@ -224,7 +223,7 @@
                             </div>
             
                             <form action="" class="form-review">
-                                <div class="d-flex">
+                                <div>
                                     <div class="input-group">
                                         <input type="text" placeholder="Your Name">
                                     </div>
@@ -234,7 +233,7 @@
                                 </div>
             
                                 <div class="input-group">
-                                    <textarea name="" cols="30" rows="10" placeholder="Write a Comment"></textarea>
+                                    <textarea placeholder="Write a Comment"></textarea>
                                 </div>
 
                                 <button>Submit Comment</button>
@@ -245,124 +244,257 @@
                     </div>
 
                     <div class="new-detail__sidebar sidebar">
-                        <form action="" class="form-search">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <input type="text" placeholder="Search">
-                                <button><i class="fas fa-search"></i></button>
-                            </div>
-                        </form>
-
-                        <div class="widget__item">
-                            <div class="title">Price</div>
-
-                            <div class="latest-posts">
-                                <div class="post">
-                                    <div class="post__thumbnail">
-                                        <img src="./assets/images/news/4.png" alt="post">
+                        <div class="sidebar__mobile">
+                            <div class="d-flex align-items-center sidebar__mobile--top">
+                                <button class="close-sidebar">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <form action="" class="form-search">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <input type="text" placeholder="Search">
+                                        <button><i class="fas fa-search"></i></button>
                                     </div>
-                                    <div class="post__text">
-                                        <span>by Admin</span>
-                                        <h4>How to Build Mechanical Tools Industry</h4>
-                                    </div>
-                                </div>
-                                <div class="post">
-                                    <div class="post__thumbnail">
-                                        <img src="./assets/images/news/4.png" alt="post">
-                                    </div>
-                                    <div class="post__text">
-                                        <span>by Admin</span>
-                                        <h4>How to Build Mechanical Tools Industry</h4>
-                                    </div>
-                                </div>
-                                <div class="post">
-                                    <div class="post__thumbnail">
-                                        <img src="./assets/images/news/4.png" alt="post">
-                                    </div>
-                                    <div class="post__text">
-                                        <span>by Admin</span>
-                                        <h4>How to Build Mechanical Tools Industry</h4>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                             
-                        </div>
 
-                        <div class="widget__item">
-                            <div class="title">Categories</div>
-
-                            <ul class="categories">
-                                <li class="category__item active">
-                                    <a href="#">
-                                        <i class="fas fa-chevron-right"></i>
-                                        Construction
-                                    </a>
-                                </li>
-
-                                <li class="category__item">
-                                    <a href="#">
-                                        <i class="fas fa-chevron-right"></i>
-                                        Industial Materials
-                                    </a>
-                                </li>
-
-                                <li class="category__item">
-                                    <a href="#">
-                                        <i class="fas fa-chevron-right"></i>
-                                        Engineering
-                                    </a>
-                                </li>
-
-                                <li class="category__item">
-                                    <a href="#">
-                                        <i class="fas fa-chevron-right"></i>
-                                        Building Plans
-                                    </a>
-                                </li>
-
-                                <li class="category__item">
-                                    <a href="#">
-                                        <i class="fas fa-chevron-right"></i>
-                                        Rennovations
-                                    </a>
-                                </li>
-
-                                <li class="category__item">
-                                    <a href="#">
-                                        <i class="fas fa-chevron-right"></i>
-                                        Civil Engineering
-                                    </a>
+                            <div class="sidebar__mobile--container">
+                                <div class="widget__item">
+                                    <div class="title">Price</div>
+        
+                                    <div class="latest-posts">
+                                        <div class="post">
+                                            <div class="post__thumbnail">
+                                                <img src="./assets/images/news/4.png" alt="post">
+                                            </div>
+                                            <div class="post__text">
+                                                <span>by Admin</span>
+                                                <h4>How to Build Mechanical Tools Industry</h4>
+                                            </div>
+                                        </div>
+                                        <div class="post">
+                                            <div class="post__thumbnail">
+                                                <img src="./assets/images/news/4.png" alt="post">
+                                            </div>
+                                            <div class="post__text">
+                                                <span>by Admin</span>
+                                                <h4>How to Build Mechanical Tools Industry</h4>
+                                            </div>
+                                        </div>
+                                        <div class="post">
+                                            <div class="post__thumbnail">
+                                                <img src="./assets/images/news/4.png" alt="post">
+                                            </div>
+                                            <div class="post__text">
+                                                <span>by Admin</span>
+                                                <h4>How to Build Mechanical Tools Industry</h4>
+                                            </div>
+                                        </div>
+                                    </div>
                                     
-                                </li>
-                            </ul>
-                            
+                                </div>
+        
+                                <div class="widget__item">
+                                    <div class="title">Categories</div>
+        
+                                    <ul class="categories">
+                                        <li class="category__item active">
+                                            <a href="#">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Construction
+                                            </a>
+                                        </li>
+        
+                                        <li class="category__item">
+                                            <a href="#">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Industial Materials
+                                            </a>
+                                        </li>
+        
+                                        <li class="category__item">
+                                            <a href="#">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Engineering
+                                            </a>
+                                        </li>
+        
+                                        <li class="category__item">
+                                            <a href="#">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Building Plans
+                                            </a>
+                                        </li>
+        
+                                        <li class="category__item">
+                                            <a href="#">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Rennovations
+                                            </a>
+                                        </li>
+        
+                                        <li class="category__item">
+                                            <a href="#">
+                                                <i class="fas fa-chevron-right"></i>
+                                                Civil Engineering
+                                            </a>
+                                            
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+        
+                                <div class="widget__item">
+                                    <div class="title">Tags</div>
+        
+                                    <ul class="tags">
+                                        <li class="tag active">
+                                            <a href="#">Construction</a>
+                                        </li>
+                                        <li class="tag ">
+                                            <a href="#">Rennovations</a>
+                                        </li>
+                                        <li class="tag ">
+                                            <a href="#">Build</a>
+                                        </li>
+                                        <li class="tag ">
+                                            <a href="#">Engineer</a>
+                                        </li>
+                                        <li class="tag ">
+                                            <a href="#">House</a>
+                                        </li>
+                                        <li class="tag ">
+                                            <a href="#">Industrial</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <button class="close-sidebar">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
 
-
-                        <div class="widget__item">
-                            <div class="title">Tags</div>
-
-                            <ul class="tags">
-                                <li class="tag active">
-                                    <a href="#">Construction</a>
-                                </li>
-                                <li class="tag ">
-                                    <a href="#">Rennovations</a>
-                                </li>
-                                <li class="tag ">
-                                    <a href="#">Build</a>
-                                </li>
-                                <li class="tag ">
-                                    <a href="#">Engineer</a>
-                                </li>
-                                <li class="tag ">
-                                    <a href="#">House</a>
-                                </li>
-                                <li class="tag ">
-                                    <a href="#">Industrial</a>
-                                </li>
+                        <div class="sidebar__desktop">
+                            <form action="" class="form-search">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <input type="text" placeholder="Search">
+                                    <button><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+    
+                            <div class="widget__item">
+                                <div class="title">Price</div>
+    
+                                <div class="latest-posts">
+                                    <div class="post">
+                                        <div class="post__thumbnail">
+                                            <img src="./assets/images/news/4.png" alt="post">
+                                        </div>
+                                        <div class="post__text">
+                                            <span>by Admin</span>
+                                            <h4>How to Build Mechanical Tools Industry</h4>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="post__thumbnail">
+                                            <img src="./assets/images/news/4.png" alt="post">
+                                        </div>
+                                        <div class="post__text">
+                                            <span>by Admin</span>
+                                            <h4>How to Build Mechanical Tools Industry</h4>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="post__thumbnail">
+                                            <img src="./assets/images/news/4.png" alt="post">
+                                        </div>
+                                        <div class="post__text">
+                                            <span>by Admin</span>
+                                            <h4>How to Build Mechanical Tools Industry</h4>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                            </ul>
-                            
+                            </div>
+    
+                            <div class="widget__item">
+                                <div class="title">Categories</div>
+    
+                                <ul class="categories">
+                                    <li class="category__item active">
+                                        <a href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            Construction
+                                        </a>
+                                    </li>
+    
+                                    <li class="category__item">
+                                        <a href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            Industial Materials
+                                        </a>
+                                    </li>
+    
+                                    <li class="category__item">
+                                        <a href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            Engineering
+                                        </a>
+                                    </li>
+    
+                                    <li class="category__item">
+                                        <a href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            Building Plans
+                                        </a>
+                                    </li>
+    
+                                    <li class="category__item">
+                                        <a href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            Rennovations
+                                        </a>
+                                    </li>
+    
+                                    <li class="category__item">
+                                        <a href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            Civil Engineering
+                                        </a>
+                                        
+                                    </li>
+                                </ul>
+                                
+                            </div>
+    
+                            <div class="widget__item">
+                                <div class="title">Tags</div>
+    
+                                <ul class="tags">
+                                    <li class="tag active">
+                                        <a href="#">Construction</a>
+                                    </li>
+                                    <li class="tag ">
+                                        <a href="#">Rennovations</a>
+                                    </li>
+                                    <li class="tag ">
+                                        <a href="#">Build</a>
+                                    </li>
+                                    <li class="tag ">
+                                        <a href="#">Engineer</a>
+                                    </li>
+                                    <li class="tag ">
+                                        <a href="#">House</a>
+                                    </li>
+                                    <li class="tag ">
+                                        <a href="#">Industrial</a>
+                                    </li>
+                                    
+                                </ul>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -458,5 +590,7 @@
         <!-- End Footer -->
         
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

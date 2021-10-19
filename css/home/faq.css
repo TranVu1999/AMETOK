@@ -2,16 +2,10 @@
     background-color: #f6f6f6;
 }
 
-.faqs .d-flex{
+.faqs .faqs__content{
+    display: flex;
     gap: 1.875rem;
-}
-
-.faq__text, .faq__thumbnail{
-    flex: 1;
-}
-
-.questions{
-    background-color: var(--light-color);
+    flex-wrap: wrap;
 }
 
 .question__item{
@@ -23,8 +17,6 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 32px;
-    right: 32px;
 
     height: 1px;
     background-color: #e3e3e3;
@@ -52,7 +44,7 @@
     max-height: 0rem;
     font-size: .875rem;
     overflow: hidden;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 
 .question__item .detail p{
@@ -64,10 +56,88 @@
     color: var(--secondary-color);
 }
 
-.question__item.active .detail{
-    max-height: 20rem;
+.question__item .label .fa-minus{
+    display: none;
+}
+.question__item .label .fa-plus{
+    display: block;
 }
 
-.question__item.active:not(:last-child) .label{
+.question__item.active .label .fa-minus{
+    display: block;
+}
+.question__item.active .label .fa-plus{
+    display: none;
+}
+
+.question__item.active .detail{
+    max-height: 8rem;
+}
+
+.question__item.active .label{
     border-bottom: 2px solid #919191;
+}
+
+
+/* ================ Responsive ================*/
+@media screen and (min-width: 320px){
+    .questions{
+        background-color: transparent;
+    }
+
+    .question__item{
+        padding: 0;
+    }
+
+    .question__item:after{
+        left: 0;
+        right: 0;
+    }
+
+    .faq__thumbnail{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px){
+    
+}
+
+@media screen and (min-width: 767px){
+    
+}
+
+@media screen and (min-width: 991px){
+    
+}
+
+@media screen and (min-width: 1023px){
+    .faqs .faqs__content{
+        display: flex;
+    }
+
+    .faq__text, .faq__thumbnail{
+        flex-basis: calc((100% - 1.875rem) / 2);
+    }
+
+    .faq__thumbnail{
+        display: block;
+    }
+
+    .questions{
+        background-color: var(--light-color);
+    }
+
+    .question__item{
+        padding: 0 2rem;
+    }
+
+    .question__item:after{
+        left: 32px;
+        right: 32px;
+    }
+}
+
+@media screen and (min-width: 1199px){
+    
 }
