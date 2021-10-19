@@ -59,8 +59,14 @@
         margin-right: 0;
     }
 
+    .benefit__thumbnail .section-padding{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
     .benefit__thumbnail img.img-mobile{
         display: block;
+        max-height: 360px;
     }
 
     .benefit__thumbnail img.img-desktop{

@@ -1,3 +1,7 @@
+.hero{
+    position: relative;
+}
+
 .hero__container{
     position: relative;
     letter-spacing: -5px;
@@ -10,8 +14,6 @@
     display: inline-block;
     padding: 11.5rem 0;
     width: 100vw;
-    min-height: 80vh;
-
 
     background-image: url('./../../assets/images/backgrounds/slider1.png');
     background-color: var(--primary-color);
@@ -53,7 +55,6 @@
 
 .hero .slider__dots{
     position: absolute;
-    bottom: 40px;
     left: 0;
     width: 100%;
 }
@@ -78,6 +79,7 @@
 @media screen and (min-width: 320px){
     .hero .slider__item{
         padding: 2.5rem 0;
+        min-height: 420px;
     }
 
     .hero .slider__text{
@@ -97,28 +99,46 @@
     .hero .slider__buttons button:first-child{
         display: none;
     }
+
+    .hero .slider__dots{
+        bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 480px){
-    
+    .hero .slider__buttons{
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .slider__dots{
+        bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 767px){
-    
-}
 
-@media screen and (min-width: 991px){
-    
-}
-
-@media screen and (min-width: 1023px){
     .hero .slider__item{
-        padding: 11.5rem 0;
+        padding: 5.5rem 0;
     }
 
     .hero .slider__text{
-        max-width: 60%;
+        max-width: 70%;
         margin-bottom: 4.25rem;
+    }
+
+    .hero .slider__text h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    
+}
+
+@media screen and (min-width: 1025px){
+    .hero .slider__item{
+        padding: 11.5rem 0;
     }
 
     .hero .slider__text h1{

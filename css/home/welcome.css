@@ -22,7 +22,6 @@
 
 .welcome_circles .number-circle{
     position: absolute;
-    right: 0;
     bottom: -20px;
 
     text-align: center;
@@ -111,6 +110,7 @@
     .welcome_circles{
         position: relative;
         margin-bottom: 2rem;
+        margin-left: -.875rem;
     }
 
     .welcome_circles .thumbnail-circle,
@@ -120,10 +120,11 @@
     }
 
     .welcome_circles .background-circle{
-        transform: translate(-50%, -50%);
+        transform: translate(-45%, -50%);
     }
 
     .welcome_circles .number-circle{
+        right: 0;
         width: 100px;
         height: 100px;
     }
@@ -154,7 +155,26 @@
 }
 
 @media screen and (min-width: 480px){
-    
+
+    .welcome_circles{
+        margin-left: -1rem;
+    }
+
+    .welcome_circles .thumbnail-circle,
+    .welcome_circles .background-circle{
+        width: 360px;
+        height: 360px;
+    }
+
+    .welcome_circles .background-circle{
+        transform: translate(-44%, -50%);
+    }
+
+    .welcome_circles .number-circle{
+        right: -10px;
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -178,6 +198,10 @@
         margin-bottom: 0;
     }
 
+    .welcome_circles{
+        margin-left: 0;
+    }
+
     .welcome_circles .thumbnail-circle,
     .welcome_circles .background-circle{
         width: 500px;
@@ -191,6 +215,7 @@
     .welcome_circles .number-circle{
         width: 175px;
         height: 175px;
+        right: 0;
     }
 
     .welcome_circles .number-circle span{
