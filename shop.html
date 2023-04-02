@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="./css/layout/header.css">
     <link rel="stylesheet" href="./css/layout/banner.css">
     <link rel="stylesheet" href="./css/layout/sidebar.css">
-    
+
     <link rel="stylesheet" href="./css/shop/shop.css">
 
     <link rel="stylesheet" href="./css/layout/footer.css">
 
-   
+
 </head>
 <body>
     <!-- 2h -->
@@ -31,15 +31,15 @@
                 <div class="d-flex align-items-center justify-content-between container">
                     <div class="d-flex header--top__left">
                         <div>
-                            <img src="./assets/images/icons/phone.png" alt="icon">
+                            <i class="fas fa-phone"></i>
                             92 666 888 0000
                         </div>
                         <div>
-                            <img src="./assets/images/icons/envelop.png" alt="icon">
+                            <i class="fas fa-envelope"></i>
                             needhelp@company.com
                         </div>
                         <div>
-                            <img src="./assets/images/icons/timing.png" alt="icon">
+                            <i class="fas fa-clock"></i>
                             Mon - Sat 8:00 - 6:30, Sunday - CLOSED
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             <img src="./assets/images/logos/logo.png" alt="logo">
                         </a>
                     </div>
-    
+
                     <nav class="header__nav">
                         <ul>
                             <li><a href="#" class="active">Home</a></li>
@@ -70,15 +70,56 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-    
-                    <div class="header__control">
+
+                    <div class="d-flex align-items-center header__control">
                         <button><img src="./assets/images/icons/search.png" alt="search"></button>
-                        <button><img src="./assets/images/icons/cart.png" alt="cart"></button>
+
+                        <div class="position-relative ml-3 cart">
+                            <divc class="cursor-pointer">
+                                <img src="./assets/images/icons/cart.png" alt="cart">
+                                <span class="cart__number">4</span>
+                            </divc>
+                            <div class="position-absolute py-3 car__detail">
+                                <ul id="carDetail">
+                                    <li class="d-flex product">
+                                        <div class="mr-3 product__thumbnail">
+                                            <img src="./assets/images/products/1.png" alt="">
+                                        </div>
+                                        <div class="product__title">
+                                            <a href="#" class="fw-bold">Classic Chair</a>
+                                            <p>$33.00 <span>x 1</span> </p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex product">
+                                        <div class="mr-3 product__thumbnail">
+                                            <img src="./assets/images/products/1.png" alt="">
+                                        </div>
+                                        <div class="product__title">
+                                            <a href="#" class="fw-bold">Classic Chair</a>
+                                            <p>$33.00 <span>x 1</span> </p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex product">
+                                        <div class="mr-3 product__thumbnail">
+                                            <img src="./assets/images/products/1.png" alt="">
+                                        </div>
+                                        <div class="product__title">
+                                            <a href="#" class="fw-bold">Classic Chair</a>
+                                            <p>$33.00 <span>x 1</span> </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="mx-3 pt-3 d-flex align-items-center justify-content-between cart__summary">
+                                    <button class="btn-checkout">Checkout</button>
+                                    <p class="fw-bold total">$132.00</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
             </div>
-        
+
         </header>
         <!-- End Header -->
 
@@ -122,13 +163,13 @@
                                         <span class="delimiter"></span>
                                         <span class="to">$550</span>
                                     </div>
-                                    
+
                                     <div class="process-button">
                                         <button>Filter</button>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                         <div class="widget__item">
@@ -175,10 +216,10 @@
                                         <i class="fas fa-chevron-right"></i>
                                         Civil Engineering
                                     </a>
-                                    
+
                                 </li>
                             </ul>
-                            
+
                         </div>
                     </div>
                     <div class="shop__content">
@@ -203,7 +244,7 @@
                                 <div class="thumbnail">
                                     <img src="./assets/images/products/1.png" alt="product">
                                     <div class="overlay">
-                                        <button>Add to Cart</button>
+                                        <button onclick="addToCart(1)">Add to Cart</button>
                                     </div>
                                 </div>
                                 <div class="text-center text">
@@ -331,14 +372,14 @@
                     <div class="d-flex">
                         <div class="footer__widget">
                             <h5 class="title">About</h5>
-    
+
                             <p class="description">There are many variations of simple lorem ipsum available for not, but the majority have suffered alteration.</p>
                             <button class="btn btn-primary">Request a Quote</button>
                         </div>
 
                         <div class="footer__widget">
                             <h5 class="title">Links</h5>
-    
+
                             <ul class="links">
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#" class="active">Meet Our Team</a></li>
@@ -349,11 +390,11 @@
                         </div>
                         <div class="footer__widget">
                             <h5 class="title">Contact</h5>
-    
+
                             <ul class="contacts">
                                 <li><a href="#">
                                     <i class="fa fa-map-marker-alt"></i>
-                                    88 Broklyn Golden Street, New York 
+                                    88 Broklyn Golden Street, New York
                                 </a></li>
                                 <li><a href="#">
                                     <i class="fa fa-clock"></i>
@@ -371,9 +412,9 @@
                         </div>
                         <div class="footer__widget">
                             <h5 class="title">Newsletter</h5>
-    
+
                             <p>There are many variations of simple lorem ipsum available for not.</p>
-                            
+
                             <form>
                                 <div class="d-flex">
                                     <input type="text" placeholder="Email Address">
@@ -389,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -397,7 +438,6 @@
                 <div class="container">
                     <div class="d-flex justify-content-between">
                         <p>© All Copyright 2020 by <span>Company.com</span></p>
-
                         <nav>
                             <a href="#">Terms & Conditions</a>
                             <a href="#">Privacy Policy</a>
@@ -408,7 +448,9 @@
             </div>
         </footer>
         <!-- End Footer -->
-        
+
     </div>
+
+    <!-- <script src="./js/cart.js"></script> -->
 </body>
 </html>

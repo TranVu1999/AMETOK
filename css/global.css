@@ -91,6 +91,10 @@
     text-align: center;
 }
 
+.fw-bold {
+    font-weight: bold;
+}
+
 
 /* ================= Slider =================*/
 .slider{
@@ -115,6 +119,52 @@
 .slider .slider__dots button.active{
     opacity: 1;
 }
+
+/* ================= Spacing =================*/
+.ml-3 {
+    margin-left: 16px;
+}
+.ml-5 {
+    margin-left: 32px;
+}
+
+.mr-3 {
+    margin-right: 16px;
+}
+
+.mx-3 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.pt-3 {
+    padding-top: 16px;
+}
+
+.px-3 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.py-3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* ================= Cursor =================*/
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* ================= Position =================*/
+.position-absolute {
+    position: absolute
+}
+
+.position-relative {
+    position: relative
+}
+
+
 
 /* ================ Responsive ================*/
 @media screen and (min-width: 320px){

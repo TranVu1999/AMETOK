@@ -102,12 +102,74 @@
     background-color: var(--secondary-color);
 }
 
-.header__control button{
-    margin-left: 1.875rem;
+.header__control img{
+    width: 1.5rem;
 }
 
-.header__control button img{
-    width: 1.5rem;
+.header .cart {
+    position: relative;
+}
+
+.header .cart__number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+
+    text-align: center;
+    line-height: 18px;
+    font-size: 10px;
+    color: white;
+}
+
+.car__detail {
+    right: 0;
+    
+    min-width: 350px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 100;
+
+    border-radius: 3px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.car__detail .product {
+    padding: 8px 16px;
+}
+
+.car__detail .product .product__thumbnail img {
+    width: 75px;
+    height: 75px;
+}
+
+.car__detail .product .product__title a{
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.cart__summary {
+    border-top: 1px solid grey;
+}
+
+.cart__summary button.btn-checkout{
+    width: 120px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cart__summary .total {
+    font-size: 20px;
+    color: var(--primary-color);
 }
 
 
@@ -146,14 +208,10 @@
     .button-toggle-menu{
         display: block;
     }
-
-    .header__control{
-        display: none;
-    }
 }
 
 @media screen and (min-width: 480px){
-    
+
 }
 
 
@@ -179,7 +237,7 @@
     .header--bottom{
         padding: 2.25rem;
     }
-    
+
     .header__nav{
         display: block;
     }
@@ -188,17 +246,12 @@
         display: none;
     }
 
-    .header__control{
-        display: block;
-    }
-
     .header__nav li a{
         padding: 0 1rem;
     }
 }
 
 @media screen and (min-width: 1024px){
-    
 
 }
 
